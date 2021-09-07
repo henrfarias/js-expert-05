@@ -14,8 +14,7 @@
   "author": "henrfarias",
   "license": "ISC",
   "devDependencies": {
-    "jest": "^27.1.0",
-    "nodemon": "2.0"
+    "jest": "^27.1.0"
   },
   "dependencies": {
     "pino": "6.8",
