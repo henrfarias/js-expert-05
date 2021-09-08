@@ -116,3 +116,7 @@ dist
 .yarn/build-state.yml
 .yarn/install-state.gz
 .pnp.*
+
+# certificates
+gdrive-api/certificates/cert.pem
+gdrive-api/certificates/key.pem
