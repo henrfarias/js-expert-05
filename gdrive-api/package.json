@@ -6,9 +6,9 @@
   "type": "module",
   "scripts": {
     "start": "mkdir -p downloads && node src/index.js",
-    "test": "NODE_OPTIONS=--experimental-vm-modules npx jest --runInBand",
-    "test:watch": "NODE_OPTIONS=--experimental-vm-modules npx jest --watch --runInBand",
-    "test:cov": "NODE_OPTIONS=--experimental-vm-modules npx jest --no-cache --runInBand --coverage"
+    "test": "NODE_OPTIONS=--experimental-vm-modules npx jest --runInBand --verbose",
+    "test:watch": "NODE_OPTIONS=--experimental-vm-modules npx jest --watchAll --verbose --runInBand",
+    "test:cov": "NODE_OPTIONS=--experimental-vm-modules npx jest --no-cache --runInBand --verbose --coverage"
   },
   "keywords": [],
   "author": "henrfarias",
