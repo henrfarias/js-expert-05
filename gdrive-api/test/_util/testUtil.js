@@ -27,7 +27,7 @@ export default class TestUtil {
     });
   }
 
-  static generateWriteableStream(onData) {
+  static generateWritableStream(onData) {
     return new Writable({
       objectMode: true,
       write(chunk, encoding, cb) {

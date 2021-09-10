@@ -61,7 +61,7 @@ describe('#UploadHandler test suite', () => {
 
       jest
         .spyOn(fs, fs.createWriteStream.name)
-        .mockImplementation(() => TestUtil.generateWriteableStream(onData));
+        .mockImplementation(() => TestUtil.generateWritableStream(onData));
 
       const onTransform = jest.fn();
       jest
@@ -104,7 +104,7 @@ describe('#UploadHandler test suite', () => {
       const messages = ['hello'];
       const source = TestUtil.generateReadableStream(messages);
       const onWrite = jest.fn();
-      const target = TestUtil.generateWriteableStream(onWrite);
+      const target = TestUtil.generateWritableStream(onWrite);
 
       await pipeline(source, handler.handleFileBytes('filename.txt'), target);
 
